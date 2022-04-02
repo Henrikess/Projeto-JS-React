@@ -1,0 +1,98 @@
+***CRIANDO O BANCO DE DADOS:
+
+create database santana;
+
+Usando o banco;
+
+use santana;
+
+***Criando tabela e definindo campos.
+
+create table santana.clientes(
+    id_cliente int not null AUTO_INCREMENT PRIMARY KEY,
+    nome_cliente varchar(50) not null,
+    idade_cliente int not null,
+    email_cliente varchar(80) not null);
+
+***Inserindo informações na tabela.
+
+insert into santana.clientes
+(nome_cliente,idade_cliente,email_cliente)
+VALUES
+("João",29,"joao343@gmail.com")
+("Fred",28,"fredzune@gmail.com")
+("Pedro",21,"pedroemais@gmail.com")
+("Rodrigo",24,"rodriguinho@gmail.com");
+
+***Selecionando visualizando todos os dados
+
+SELECT * from santana.clientes;
+
+***Selecionando por itens da tabelas especificos
+
+SELECT nome_cliente,idade from santana.cliente;
+
+***Selecionando por dados especificos
+
+select * from santana.clientes WHERE idade_cliente=28;
+
+select * from santana.cliente WHERE nome_client like("Fred%");
+
+select * from santana.cliente WHERE nome_client like("F%");		
+
+
+
+
+***resumo:
+
+
+create database santana;
+use santana;
+create table santana.clientes(
+    id_cliente int not null AUTO_INCREMENT PRIMARY KEY,
+    nome_cliente varchar(50) not null,
+    idade_cliente int not null,
+    email_cliente varchar(80) not null);
+
+insert into santana.clientes
+(nome_cliente,idade_cliente,email_cliente)
+VALUES
+("João",29,"joao343@gmail.com")
+("Fred",28,"fredzune@gmail.com")
+("Pedro",21,"pedroemais@gmail.com")
+("Rodrigo",24,"rodriguinho@gmail.com");
+
+SELECT * from santana.clientes;
+    
+
+Professor:
+SQL = Linguagem Consulta Estruturada
+SGBD = Sistema Gerenciamento Banco Dados
+
+-- Criei um database
+create database bontempo;
+
+-- Eu deixei o database aberto para uso
+use bontempo;
+
+-- Vamos criar uma tabela de clientes dentro do 
+nosso database
+	
+
+-- Verificando a estrutura da nossa tabela
+describe bontempo.clientes;
+
+-- Inserindo dados na estrutura da nossa tabela
+insert into bontempo.clientes
+(nome_cliente,idade_cliente,email_cliente) 
+VALUES 
+("Ricardo Alexabndre",48,"ricardo@gama.com"), 
+("Mariana da Silva",24,"mari@ig.com.br"), 
+("Paulo Alexandre",22,"pa@terra.com.br");
+
+-- Visualizando os registros inseridos na estrutura da nossa tabela
+select * from bontempo.clientes;
+
+select nome_cliente,email_cliente from bontempo.clientes;
+
+    

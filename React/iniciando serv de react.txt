@@ -1,0 +1,23 @@
+Turma segue os passos de procedimentos desde a instalação do Node JS
+páginas
+
+React
+Node JS
+
+Após instalar a nossa aplicação, deveremos entrar no command através do CMD
+
+a - Digitar na linha de comando o node -v
+irá mostrar a versão que foi instalada do serviço
+
+b - Digitar na linha de comando o npm -v
+irá mostrar a verão do serviço executavel
+
+c - Digitar agora o comando cd para criar a pasta do nosso projeto
+cd mais arrastar o local 
+
+d - Dentro da pasta do desktop, ou seja na área de trabalho digitar o comando para criar o nosso projeto
+npx create-react-app alexandretutorial
+
+2º) Após aparecer a tela de finalização, entre na subpasta dando o comando abaixo:
+cd bertozzi
+code .
